@@ -35,6 +35,6 @@ type Productos []Producto
 
 // creando las tablas en la base de datos
 func Migraciones() {
-	//database.Database.AutoMigrate(&Categoria{})
+	database.Database.AutoMigrate(&Categoria{})
 	database.Database.AutoMigrate(&Producto{})
 }

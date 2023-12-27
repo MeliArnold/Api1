@@ -2,6 +2,7 @@ package main
 
 import (
 	"Api1/handlers"
+	"Api1/modelos"
 	"github.com/gorilla/mux"
 	"github.com/rs/cors"
 	"log"
@@ -10,7 +11,7 @@ import (
 
 func main() {
 	// migrar la bd
-	//modelos.Migraciones() // ayuda a crear las tablas en la BD, debemos descomentarla para usarla
+	modelos.Migraciones() // ayuda a crear las tablas en la BD, debemos descomentarla para usarla
 
 	mux := mux.NewRouter()
 
